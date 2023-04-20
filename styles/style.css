@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+
+    --cor-um: #2A2F4F;
+    --cor-dois: #917FB3;
+    --cor-tres: #E5BEEC;
+    --cor-quatro: #FDE2F3;
+
+    --fonte-um: 'Krona One', sans-serif;
+    --fonte-dois: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: var(--cor-dois);
+    color: #2A2F4F
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho--texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-dois);
+}
+
+.cabecalho--link {
+    font-family: var(--fonte-dois);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-tres);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 2% 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.apresentacao--editoras {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao--editoras--titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-um);
+}
+
+.apresentacao--editoras--texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-dois);
+}
+
+.apresentacao--editoras--links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid var(--cor-tres);
+    width: auto;
+    border-radius: 16px;
+    padding: 5%;
+}
+
+.links:hover {
+    background-color: var(--cor-quatro);
+}
+
+.imagem--panini {
+    max-width: 200px;
+    max-height: 50px;
+}
+
+.imagem--newpop {
+    max-width: 224px;
+    max-height: 144px;
+}
+
+.imagem--jbc {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.apresentacao--lojas {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao--lojas--titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-um);
+}
+
+.apresentacao--lojas--texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-dois);
+}
+
+.apresentacao--lojas--links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.imagem--amazon {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.imagem--amorabs {
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.imagem--co {
+    max-width: 269px;
+    max-height: 150px;
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-tres);
+    background-color: var(--cor-um);
+    text-align: center;
+    font-family: var(--fonte-dois);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 5%;
+    }
+
+    .cabecalho--texto {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        padding: 5%;
+    } 
+
+    .apresentacao--editoras {
+        width: auto;
+    }
+
+    .apresentacao--lojas {
+        width: auto;
+    }
+
+    .apresentacao--editoras--links {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        gap: 32px;
+    }
+
+    .apresentacao--lojas--links {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        gap: 32px;
+    }
+
+    .imagem--panini {
+        display: flex;
+        max-width: 200px;
+        max-height: 50px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid var(--cor-tres);
+        width: auto;
+        border-radius: 16px;
+        padding: 5%;
+    }
+
+}
